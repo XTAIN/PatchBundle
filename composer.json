@@ -1,0 +1,22 @@
+{
+  "name": "xtain/patch-bundle",
+  "type": "symfony-bundle",
+  "description": "XTAIN Patch Bundle",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3",
+    "xtain/patch": "^0.9|1.0",
+    "symfony/config": "^4.1",
+    "symfony/dependency-injection": "^4.1",
+    "symfony/http-kernel": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "XTAIN\\PatchBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "minimum-stability": "dev"
+}
