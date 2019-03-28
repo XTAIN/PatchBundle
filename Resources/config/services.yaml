@@ -8,6 +8,16 @@ services:
   # makes classes in src/App available to be used as services
   # this creates a service per class whose id is the fully-qualified class name
 
+  XTAIN\Patch\JSON\Converter:
+      class: XTAIN\Patch\JSON\Converter
+
+  XTAIN\Patch\JSON\SerializationHandler:
+      class: XTAIN\Patch\JSON\SerializationHandler
+      arguments:
+        - '@XTAIN\Patch\JSON\Converter'
+      tags:
+        - { name: "jms_serializer.subscribing_handler" }
+
   XTAIN\Patch\Patcher:
       class: XTAIN\Patch\Patcher
       public: true
