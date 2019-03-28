@@ -1,6 +1,6 @@
 <?php
 
-namespace XTAIN\PatchBundle\DependencyInjection;
+namespace XTAIN\PatchBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
