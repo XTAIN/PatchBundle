@@ -15,3 +15,5 @@ services:
         - [ 'setConverter', [ '@XTAIN\Patch\JSON\Converter' ] ]
 
   XTAIN\Patch\PatcherInterface: '@XTAIN\Patch\Patcher'
+
+  xtain.patch: '@XTAIN\Patch\Patcher'
