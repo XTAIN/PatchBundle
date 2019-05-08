@@ -26,6 +26,8 @@ services:
 
   XTAIN\Patch\PatcherInterface: '@XTAIN\Patch\Patcher'
 
-  xtain.patch:
+  xtain_patch.patcher:
     alias: 'XTAIN\Patch\Patcher'
     public: true
+
+  xtain.patch: '@xtain_patch.patcher'
